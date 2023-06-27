@@ -1,0 +1,15 @@
+.bg {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position: fixed;
+}
+.bg img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.main {
+  position: relative;
+}/*# sourceMappingURL=index.css.map */

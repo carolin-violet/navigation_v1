@@ -1,0 +1,14 @@
+.bg{
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position: fixed;
+  img{
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+.main{
+  position: relative;
+}
