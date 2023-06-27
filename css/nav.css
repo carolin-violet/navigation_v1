@@ -1,6 +1,18 @@
-.sub-category {
-  display: none;
+.nav-wrapper {
+  position: relative;
+  margin: 0 auto;
+  width: 90%;
 }
-.sub-category.active {
+.nav-wrapper .sub-category {
+  display: none;
+  transition: all 0.3s;
+}
+.nav-wrapper .sub-category.active {
   display: block;
+  position: absolute;
+  width: 220px;
+}
+
+strong {
+  font-size: 30px;
 }/*# sourceMappingURL=nav.css.map */

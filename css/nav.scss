@@ -1,6 +1,22 @@
-.sub-category{
-  display: none;
-  &.active{
-    display: block;
+$sub-category-width: 220px;
+
+.nav-wrapper{
+  position: relative;
+  margin: 0 auto;
+  width: 90%;
+  .sub-category{
+    display: none;
+    transition: all 0.3s;
+    &.active{
+      display: block;
+      position: absolute;
+      width: $sub-category-width;
+    }
   }
+}
+
+
+
+strong{
+  font-size: 30px;
 }

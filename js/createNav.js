@@ -526,8 +526,8 @@ const navList = {
 }
 
 
-const categoryTitleWrapper = document.querySelector('.category-title-wrapper')
-const navWrapper = document.querySelector('.nav-wrapper')
+let categoryTitleWrapper = document.querySelector('.category-title-wrapper')
+let navWrapper = document.querySelector('.nav-wrapper')
 
 // 根据导航列表创建节点
 const createNavElement = () => {
@@ -563,7 +563,7 @@ const createNavElement = () => {
           <div class='icon'>
             <img src=""></img> 
           </div>
-          <div class='nav' title='${nav.title}'>
+          <div class='nav' title='${nav.title ? nav.title : ''}'>
             ${nav.name}
           </div>
         `
@@ -576,21 +576,3 @@ const createNavElement = () => {
   })
 }
 createNavElement()
-
-
-// 设置节点的点击监听
-categoryTitleWrapper.addEventListener('click', event => {
-  // 利用事件委托机制给容器设置一个点击监听，再给命中的大分类元素添加active属性
-  const categoryElList = document.querySelectorAll('.category')
-  categoryElList.forEach(el => {
-    el === event.target ? el.classList.add('active') : el.classList.remove('active')
-  })
-
-  // 给小分类模块修改active属性
-  const subCategoryElList = document.querySelectorAll('.sub-category')
-  if (event.target.dataset.category) {
-    subCategoryElList.forEach(subCategoryEl => {
-      subCategoryEl.dataset.category === event.target.dataset.category ? subCategoryEl.classList.add('active') : subCategoryEl.classList.remove('active')
-    })
-  }
-})
