@@ -3,6 +3,7 @@
  * v0.2 | 20150615
  * License: none (public domain)
  */
+
 *,
 *::after,
 *::before {
@@ -125,12 +126,12 @@ ul {
 blockquote,
 q {
   quotes: none;
-}
-blockquote::before, blockquote::after,
-q::before,
-q::after {
-  content: "";
-  content: none;
+
+  &::before,
+  &::after {
+    content: '';
+    content: none;
+  }
 }
 
 sub,
@@ -142,11 +143,11 @@ sup {
 }
 
 sup {
-  top: -0.5em;
+  top: -.5em;
 }
 
 sub {
-  bottom: -0.25em;
+  bottom: -.25em;
 }
 
 table {
@@ -163,8 +164,8 @@ button {
 }
 
 select {
-  text-indent: 0.01px;
-  text-overflow: "";
+  text-indent: .01px;
+  text-overflow: '';
   border: 0;
   border-radius: 0;
   -webkit-appearance: none;
@@ -179,4 +180,4 @@ code,
 pre {
   font-family: monospace, monospace;
   font-size: 1em;
-}/*# sourceMappingURL=reset.css.map */
+}

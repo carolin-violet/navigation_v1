@@ -1,0 +1,6 @@
+.sub-category{
+  display: none;
+  &.active{
+    display: block;
+  }
+}
