@@ -577,12 +577,14 @@ const createNavElement = () => {
         const li = document.createElement('li')
         li.className = 'nav-item'
         li.innerHTML = `
+        <a class='nav-link' target='_blank' href=${nav.href}>
           <div class='icon'>
             <img src=""></img> 
           </div>
           <div class='nav' title='${nav.title ? nav.title : ''}'>
             ${nav.name}
           </div>
+        </a>
         `
         navContainer.appendChild(li)
       })
