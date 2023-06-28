@@ -125,9 +125,9 @@ const navList = {
   },
   "web3": {
     "资料": [
-      {name: '以太坊', href: 'https://ethereum.org/zh/'},
-      {name: 'hyperledger-fabric', href: 'https://github.com/hyperledger/fabric', title: 'hyperledger-fabric'},
-      {name: 'metamask', href: 'https://metamask.io/', title: '以太币钱包工具'},
+      {name: '以太坊', href: 'https://ethereum.org/zh/', icon: '../images/favicons/以太坊.png'},
+      {name: 'hyperledger-fabric', href: 'https://github.com/hyperledger/fabric', icon: '../images/favicons/hyperledger-fabric.png', title: 'hyperledger-fabric'},
+      {name: 'metamask', href: 'https://metamask.io/', icon: '../images/favicons/metamask.png', title: '以太币钱包工具'},
       {name: 'Remix', href: 'https://remix.ethereum.org/', title: '在线开发智能合约'},
       {name: '大牛博客', href: 'https://www.dappuniversity.com/'},
       {name: '登链社区', href: 'https://learnblockchain.cn/'},
@@ -579,7 +579,7 @@ const createNavElement = () => {
         li.innerHTML = `
         <a class='nav-link' target='_blank' href=${nav.href}>
           <div class='icon'>
-            <img src=""></img> 
+            <img src='${nav.icon}'></img> 
           </div>
           <div class='nav' title='${nav.title ? nav.title : ''}'>
             ${nav.name}
