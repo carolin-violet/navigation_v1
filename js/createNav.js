@@ -581,7 +581,7 @@ const createNavElement = () => {
           <div class='icon'>
             <img src='${nav.icon}'></img> 
           </div>
-          <div class='nav' title='${nav.title ? nav.title : ''}'>
+          <div class='nav' title='${nav.title ? nav.title : '暂无备注'}'>
             ${nav.name}
           </div>
         </a>
