@@ -1,5 +1,18 @@
 // 创建标签节点
 
+// 调色板
+const colorPalette = [
+  { bg: '#5A7A7B', font: '#D2FAEB' },
+  { bg: '#2A9392', font: '#FCE2C6' },
+  { bg: '#5C376E', font: '#BDEADF' },
+  { bg: '#012C50', font: '#B9F1DA' },
+  { bg: '#244D57', font: '#FDB78F' },
+  { bg: '#04444F', font: '#66E7F5' },
+  { bg: '#237847', font: '#DFD988' },
+  { bg: '#1D326D', font: '#D0D181' },
+  { bg: '#2FB97B', font: '#FDF9F6' },
+]
+
 // 导航列表
 const navList = {
   "学习": {
@@ -543,12 +556,15 @@ const createNavElement = () => {
     categoryTitleWrapper.appendChild(categoryEl)
 
     // 遍历每个大分类创建每个小分类
-    Object.keys(navList[category]).forEach(subCategory => {
+    Object.keys(navList[category]).forEach((subCategory, index) => {
       const subCategoryEl = document.createElement('div')
       subCategoryEl.classList.add('sub-category')
       subCategoryEl.dataset.category = category
       subCategoryEl.dataset.subCategory = subCategory
+      subCategoryEl.style.backgroundColor = colorPalette[index % colorPalette.length].bg
+      subCategoryEl.style.color = colorPalette[index % colorPalette.length].font
       const titleEl = document.createElement('strong')
+      titleEl.classList.add('sub-category-title')
       titleEl.innerText = subCategory
       subCategoryEl.appendChild(titleEl)
 

@@ -16,14 +16,15 @@ categoryTitleWrapper.addEventListener('click', event => {
     })
   }
   setPosition()
+  checkSubCategory()
 })
 
 // 获取激活状态的小分类模块
 const getActiveCategoryEl = () => Array.from(navWrapper.children).filter(subCategoryEl => Array.from(subCategoryEl.classList).includes('active'))
-
+let activeElList
 
 // 每个小分类的宽度
-categoryWith = 220
+categoryWith = 300
 
 // 计算列数和间隙宽度
 const calc = () => {
@@ -44,7 +45,7 @@ const setPosition = () => {
 
   const columnHeight = new Array(columns).fill(0)
 
-  const activeElList = getActiveCategoryEl()
+  activeElList = getActiveCategoryEl()
   // 遍历每一个小分类，使其填充到最短列的下面
   for (let i = 0; i < activeElList.length; i++) {
     const subCategoryEl = activeElList[i]

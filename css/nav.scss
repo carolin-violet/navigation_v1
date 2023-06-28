@@ -1,4 +1,4 @@
-$sub-category-width: 220px;
+$sub-category-width: 300px;
 
 .nav-wrapper{
   position: relative;
@@ -6,11 +6,24 @@ $sub-category-width: 220px;
   width: 90%;
   .sub-category{
     display: none;
-    transition: all 0.3s;
+    width: $sub-category-width;
+    height: auto;
+    padding: 15px 10px;
+    border-radius: 15px;
+    transition: all 0.3s ease-in-out;
     &.active{
       display: block;
       position: absolute;
-      width: $sub-category-width;
+      opacity: 0;
+      scale: 0.9;
+      &.show{
+        opacity: 0.95;
+        scale: 1;
+      }
+    }
+
+    .nav-list{
+    
     }
   }
 }
