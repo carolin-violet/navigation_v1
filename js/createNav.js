@@ -569,12 +569,13 @@ const createNavElement = () => {
       subCategoryEl.appendChild(titleEl)
 
       const navContainer = document.createElement('ul')
-      navContainer.classList.add('.nav-list')
+      navContainer.classList.add('nav-list')
       subCategoryEl.appendChild(navContainer)
 
       // 遍历每一个小分类创建导航链接
       navList[category][subCategory].forEach(nav => {
         const li = document.createElement('li')
+        li.className = 'nav-item'
         li.innerHTML = `
           <div class='icon'>
             <img src=""></img> 

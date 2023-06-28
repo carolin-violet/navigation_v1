@@ -21,6 +21,26 @@
   opacity: 0.95;
   scale: 1;
 }
-strong {
-  font-size: 30px;
+.nav-wrapper .sub-category .sub-category-title {
+  font-size: 20px;
+}
+.nav-wrapper .sub-category .nav-list {
+  margin-top: 10px;
+}
+.nav-wrapper .sub-category .nav-list .nav-item {
+  display: flex;
+  padding: 5px 0;
+  cursor: pointer;
+}
+.nav-wrapper .sub-category .nav-list .nav-item .nav {
+  position: relative;
+  display: inline-block;
+}
+.nav-wrapper .sub-category .nav-list .nav-item .nav::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
 }/*# sourceMappingURL=nav.css.map */

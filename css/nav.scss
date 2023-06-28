@@ -22,14 +22,29 @@ $sub-category-width: 300px;
       }
     }
 
+    .sub-category-title{
+      font-size: 20px;
+    }
+
     .nav-list{
-    
+      margin-top: 10px;
+      .nav-item{
+        display: flex;
+        padding: 5px 0;
+        cursor: pointer;
+        .nav{
+          position: relative;
+          display: inline-block;
+          &::before{
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 1px;
+          }
+        }
+      }
     }
   }
-}
-
-
-
-strong{
-  font-size: 30px;
 }
