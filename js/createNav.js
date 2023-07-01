@@ -17,7 +17,6 @@ const colorPalette = [
 const navList = {
   "学习": {
     '学习导航': [
-      {name: 'chatgpt', href: 'https://chat.openai.com/chat', icon: '../images/favicons/chatgpt.png', title: 'chatgpt'},
       {name: 'github', href: 'https://github.com/', icon: '../images/favicons/github.png', title: '全球开源平台'},
       {name: 'gitee', href: 'https://gitee.com/', icon: '../images/favicons/gitee.ico', title: '国内开源平台'},
       {name: '掘金', href: 'https://juejin.cn/', icon: '../images/favicons/掘金.png', title: '编程学习网站'},
@@ -139,19 +138,18 @@ const navList = {
   },
   "AI": {
     "stable diffusion 专栏": [
-      {name: 'civitai', href: 'https://civitai.com/', title: 'ai模型', icon: '../images/favicons/星火链网.ico'},
-      {name: 'openart', href: 'https://openart.ai/', title: 'ai模型', icon: '../images/favicons/星火链网.ico'},
-      {name: 'arthub', href: 'https://arthub.ai/', title: 'ai模型', icon: '../images/favicons/星火链网.ico'},
-      {name: 'dawnmark', href: 'https://ai.dawnmark.cn/', title: 'ai词汇', icon: '../images/favicons/星火链网.ico'},
-      {name: 'atoolbox', href: 'http://www.atoolbox.net/Tool.php?Id=1101', title: 'ai词汇', icon: '../images/favicons/星火链网.ico'}
+      {name: 'civitai', href: 'https://civitai.com/', title: 'ai模型', icon: '../images/favicons/civitai.ico'},
+      {name: 'openart', href: 'https://openart.ai/', title: 'ai模型', icon: '../images/favicons/openart.ico'},
+      {name: 'arthub', href: 'https://arthub.ai/', title: 'ai模型', icon: '../images/favicons/arthub.ico'},
+      {name: 'dawnmark', href: 'https://ai.dawnmark.cn/', title: 'ai词汇', icon: '../images/favicons/dawnmark.ico'},
+      {name: 'atoolbox', href: 'http://www.atoolbox.net/Tool.php?Id=1101', title: 'ai词汇', icon: '../images/favicons/atoolbox.ico'}
     ],
     "应用": [
-      {name: 'openai', href: 'https://openai.com/', title: '', icon: '../images/favicons/星火链网.ico'},
-      {name: 'chatgpt', href: 'https://chat.openai.com/', title: '', icon: '../images/favicons/星火链网.ico'},
-      {name: 'phind', href: 'https://www.phind.com/', title: '编程搜索引擎', icon: '../images/favicons/星火链网.ico'},
-      {name: 'CIVITAI', href: 'https://civitai.com/', title: '人物模型', icon: '../images/favicons/星火链网.ico'},
-      {name: 'leiapix', href: 'https://convert.leiapix.com/', title: '图片转深度图', icon: '../images/favicons/星火链网.ico'},
-      {name: 'AIAS-AI', href: 'http://aias.top/', title: '一些算法代码', icon: '../images/favicons/星火链网.ico'},
+      {name: 'openai', href: 'https://openai.com/', title: '', icon: '../images/favicons/openai.ico'},
+      {name: 'chatgpt', href: 'https://chat.openai.com/', title: '', icon: '../images/favicons/chatgpt.png'},
+      {name: 'phind', href: 'https://www.phind.com/', title: '编程搜索引擎', icon: '../images/favicons/phind.png'},
+      {name: 'leiapix', href: 'https://convert.leiapix.com/', title: '图片转深度图', icon: '../images/favicons/leiapix.ico'},
+      {name: 'AIAS-AI', href: 'http://aias.top/', title: '一些算法代码', icon: '../images/favicons/AIAS-AI.ico'},
     ],
   },
   "前端开发": {
