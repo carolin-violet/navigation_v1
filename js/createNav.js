@@ -504,20 +504,19 @@ const navList = {
   },
   "博客": {
     "开源博客框架": [
-      {name: 'hexo', href: 'https://hexo.io/zh-cn/', icon: '../images/favicons/civitai.ico'},
-      {name: 'halo', href: 'https://halo.run/', icon: '../images/favicons/civitai.ico'},
+      {name: 'hexo', href: 'https://hexo.io/zh-cn/', icon: '../images/favicons/hexo.png'},
+      {name: 'halo', href: 'https://halo.run/', icon: '../images/favicons/halo.webp'},
     ],
     "大佬博客": [
-      {name: '阮一峰的个人网站', href: 'http://www.ruanyifeng.com/home.html', icon: '../images/favicons/civitai.ico'},
-      {name: 'CSS-Inspiration', href: 'https://chokcoco.github.io/CSS-Inspiration/#/', icon: '../images/favicons/civitai.ico', title: 'css灵感博客'},
-      {name: '程序员成长指北', href: 'http://www.inode.club/', icon: '../images/favicons/civitai.ico'},
-      {name: '大场面试每日一题', href: 'https://q.shanyue.tech/', icon: '../images/favicons/civitai.ico'},
-      {name: '峰华前端工程师', href: 'https://zxuqian.cn/', icon: '../images/favicons/civitai.ico'},
-      {name: '木风可可', href: 'http://www.sorrowfeng.top/', icon: '../images/favicons/civitai.ico'},
-      {name: 'aiiyx', href: 'https://aiiyx.cn/', icon: '../images/favicons/civitai.ico'},
-      {name: '楠格', href: 'https://www.nange.cn/', icon: '../images/favicons/civitai.ico'},
-      {name: 'Amaya丶夜雨', href: 'https://amayaliu.cn/', icon: '../images/favicons/civitai.ico'},
-      {name: 'Evan', href: 'https://xugaoyi.com/', icon: '../images/favicons/civitai.ico'}
+      {name: '阮一峰的个人网站', href: 'http://www.ruanyifeng.com/home.html', icon: '../images/favicons/阮一峰的个人网站.ico'},
+      {name: 'CSS-Inspiration', href: 'https://chokcoco.github.io/CSS-Inspiration/#/', icon: '../images/favicons/CSS-Inspiration.png', title: 'css灵感博客'},
+      {name: '程序员成长指北', href: 'http://www.inode.club/', icon: '../images/favicons/程序员成长指北.ico'},
+      {name: '大场面试每日一题', href: 'https://q.shanyue.tech/', icon: '../images/favicons/大场面试每日一题.ico'},
+      {name: '峰华前端工程师', href: 'https://zxuqian.cn/', icon: '../images/favicons/峰华前端工程师.ico'},
+      {name: 'aiiyx', href: 'https://aiiyx.cn/', icon: ''},
+      {name: '楠格', href: 'https://www.nange.cn/', icon: '../images/favicons/楠格.png'},
+      {name: 'Amaya丶夜雨', href: 'https://amayaliu.cn/', icon: '../images/favicons/Amaya丶夜雨.jpg'},
+      {name: 'Evan', href: 'https://xugaoyi.com/', icon: ''}
     ]
   }
 }
