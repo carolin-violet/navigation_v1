@@ -154,7 +154,7 @@ const navList = {
   },
   "前端开发": {
     "Vue相关": [
-      {name: 'vue3', href: 'https://v3.cn.vuejs.org/'},
+      {name: 'vue3', href: 'https://v3.cn.vuejs.org/', icon: '../images/favicons/github.png'},
       {name: 'VueUse', href: 'https://vueuse.org/'},
       {name: 'vue2', href: 'https://cn.vuejs.org/'},
       {name: 'ElementUI', href: 'https://element.eleme.io/#/zh-CN', title: '饿了么开发的组件库，支持vue2'},
@@ -412,35 +412,32 @@ const navList = {
   },
   "素材渠道": {
     "导航站点": [
-      {name: '兰客书签', href: 'http://b.lackk.com/', icon: '../images/favicons/civitai.ico'},
-      {name: 'ABOUT导航', href: 'https://www.aboutppt.com/', icon: '../images/favicons/civitai.ico'},
-      {name: '阿雷资源导航', href: 'http://aleikeji.com/', icon: '../images/favicons/civitai.ico'},
+      {name: '兰客书签', href: 'http://b.lackk.com/', icon: '../images/favicons/兰客书签.png'},
+      {name: 'ABOUT导航', href: 'https://www.aboutppt.com/', icon: '../images/favicons/ABOUT导航.ico'},
+      {name: '阿雷资源导航', href: 'http://aleikeji.com/', icon: '../images/favicons/阿雷资源导航.ico'},
     ],
     "图片": [
-      {name: 'wallhaven', href: 'https://wallhaven.cc/', icon: '../images/favicons/civitai.ico'},
-      {name: '壁纸深渊', href: 'https://wall.alphacoders.com/', icon: '../images/favicons/civitai.ico'},
-      {name: '极简壁纸', href: 'https://bz.zzzmh.cn/index', icon: '../images/favicons/civitai.ico'},
-      {name: 'Takagi画廊', href: 'https://view.lixingyong.com/', icon: '../images/favicons/civitai.ico'},
-      {name: 'Pexels', href: 'https://www.pexels.com/zh-cn/', icon: '../images/favicons/civitai.ico', title: '摄影图片视频资源'},
-      {name: 'pixabay', href: 'https://pixabay.com/zh/', icon: '../images/favicons/civitai.ico', title: '免费正版高清图片'},
-      {name: 'wallpaperscraft', href: 'https://wallpaperscraft.com/', icon: '../images/favicons/civitai.ico', title: '图片资源'},
-      {name: 'wallpapermaiden', href: 'https://www.wallpapermaiden.com/', icon: '../images/favicons/civitai.ico', title: '图片资源'},
-      {name: 'anime-pictures', href: 'https://anime-pictures.net/', icon: '../images/favicons/civitai.ico', title: '图片资源'},
-      {name: 'wallroom', href: 'https://wallroom.io/', icon: '../images/favicons/civitai.ico', title: '图片资源'},
-      {name: 'vmgirls', href: 'https://www.vmgirls.com/', icon: '../images/favicons/civitai.ico'},
+      {name: 'pixiv', href: 'https://www.pixiv.net/', icon: '../images/favicons/pixiv.ico'},
+      {name: 'wallhaven', href: 'https://wallhaven.cc/', icon: '../images/favicons/wallhaven.ico'},
+      {name: '壁纸深渊', href: 'https://wall.alphacoders.com/', icon: '../images/favicons/壁纸深渊.png'},
+      {name: '极简壁纸', href: 'https://bz.zzzmh.cn/index', icon: '../images/favicons/极简壁纸.png'},
+      {name: 'Takagi画廊', href: 'https://view.lixingyong.com/', icon: ''},
+      {name: 'Pexels', href: 'https://www.pexels.com/zh-cn/', icon: '../images/favicons/Pexels.ico', title: '摄影图片视频资源'},
+      {name: 'pixabay', href: 'https://pixabay.com/zh/', icon: '../images/favicons/pixabay.png', title: '免费正版高清图片'},
+      {name: 'wallpaperscraft', href: 'https://wallpaperscraft.com/', icon: '../images/favicons/wallpaperscraft.ico', title: '图片资源'},
+      {name: 'wallpapermaiden', href: 'https://www.wallpapermaiden.com/', icon: '../images/favicons/wallpapermaiden.png', title: '图片资源'},
+      {name: 'anime-pictures', href: 'https://anime-pictures.net/', icon: '../images/favicons/anime-pictures.ico', title: '图片资源'},
+      {name: 'wallroom', href: 'https://wallroom.io/', icon: '../images/favicons/wallroom.ico', title: '图片资源'},
     ],
-    "动漫": [
-      {name: '蜜柑计划', href: 'https://mikanani.me/', icon: '../images/favicons/civitai.ico'},
-      {name: '动漫花园', href: 'https://dmhy.org/', icon: '../images/favicons/civitai.ico'},
-      {name: '致美化', href: 'https://zhutix.com/', icon: '../images/favicons/civitai.ico'},
-      {name: '潮点视频', href: 'https://shipin520.com/', icon: '../images/favicons/civitai.ico'},
+    "动漫视频": [
+      {name: '蜜柑计划', href: 'https://mikanani.me/', icon: '../images/favicons/蜜柑计划.ico'},
+      {name: '动漫花园', href: 'https://dmhy.org/', icon: '../images/favicons/动漫花园.ico'},
+      {name: '致美化', href: 'https://zhutix.com/', icon: '../images/favicons/致美化.png'},
+      {name: '潮点视频', href: 'https://shipin520.com/', icon: '../images/favicons/潮点视频.ico'},
     ],
     "音乐": [
-      {name: 'MyFreeMP3', href: 'http://tools.liumingye.cn/music/?page=searchPage', icon: '../images/favicons/civitai.ico'},
+      {name: 'MyFreeMP3', href: 'http://tools.liumingye.cn/music/?page=searchPage', icon: '../images/favicons/MyFreeMP3.ico'},
     ],
-    "ppt": [
-      {name: '芒果派ppt模板', href: 'http://www.686ppt.com/', icon: '../images/favicons/civitai.ico'},
-    ]
   },
   "娱乐": {
     "购物": [
