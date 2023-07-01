@@ -72,6 +72,8 @@ const navList = {
       {name: '百度地图开放平台', href: 'https://lbsyun.baidu.com/', icon: '../images/favicons/百度地图开放平台.ico'},
       {name: '百度AI开放平台', href: 'https://ai.baidu.com/', icon: '../images/favicons/百度AI开放平台.ico'},
       {name: '谷歌开发者中心', href: 'https://chrome.google.com/webstore/devconsole/', icon: '../images/favicons/谷歌开发者中心.png', title: '主要可以发布自己开发的插件到chrome插件商店中'},
+      {name: 'algolia', href: 'https://community.algolia.com/', icon: '../images/favicons/algolia.png', title: ''},
+      {name: '百度统计', href: 'https://tongji.baidu.com/web/welcome/login?castk=LTE%3D', icon: '../images/favicons/百度统计.ico', title: ''},
     ],
     "求职": [
       {name: '牛客网', href: 'https://www.nowcoder.com/', icon: '../images/favicons/牛客网.ico', title: '包含很多求职技巧和面试题'},
@@ -182,7 +184,7 @@ const navList = {
       {name: 'vue-vben-admin', href: 'https://github.com/vbenjs/vue-vben-admin', icon: '../images/favicons/github.png', title: 'vue3的开源后台管理系统模板'},
       {name: 'fantastic-admin', href: 'https://fantastic-admin.gitee.io/', icon: '../images/favicons/fantastic-admin.ico', title: 'vue3的开源后台管理系统模板'},
       {name: 'arco design', href: 'https://arco.design/', icon: '../images/favicons/arco design.ico', title: '字节开源后台管理系统模板'},
-      {name: 'mini-vue', href: 'https://github.com/cuixiaorui/mini-vue', icon: '../images/favicons/github.png', title: 'vue3源码讲解'},
+      {name: 'Geeker-Admin', href: 'https://github.com/hello-lc/Geeker-Admin', icon: '../images/favicons/github.png', title: 'Vue 3.2 + TypeScript + Pinia + Vite2 + Element-Plus 管理系统'},
       {name: 'Vue3练手项目', href: 'https://github.com/newbee-ltd/vue3-admin', icon: '../images/favicons/github.png', title: 'github开源的vue3项目'},
       {name: 'vue-froala', href: 'https://github.com/froala/vue-froala-wysiwyg', icon: '../images/favicons/github.png', title: '开源的富文本编辑器'},
       {name: 'mavoneditor富文本编辑器', href: 'http://www.mavoneditor.com/', icon: '', title: '适用于vue2的富文本编辑器插件'},
@@ -196,6 +198,8 @@ const navList = {
       {name: 'vue-socketio', href: 'https://github.com/MetinSeylan/Vue-Socket.io', icon: '../images/favicons/github.png', title: 'vue-socketio'},
       {name: 'VuePress中文网', href: 'http://caibaojian.com/vuepress/', icon: '../images/favicons/vue.svg', title: 'vue驱动的静态站点生成工具'},
       {name: 'Vuetify', href: 'https://vuetifyjs.com/en/getting-started/installation/', icon: '../images/favicons/Vuetify.ico', title: 'Vuetify'},
+      {name: 'mini-vue', href: 'https://github.com/cuixiaorui/mini-vue', icon: '../images/favicons/github.png', title: 'vue3源码讲解'},
+      {name: 'element-plus-best-practices', href: 'https://github.com/sxzz/element-plus-best-practices', icon: '../images/favicons/github.png', title: '学习elementplus源码'},
     ],
     "构建打包工具": [
       {name: 'Vite', href: 'https://vitejs.cn/', icon: '../images/favicons/Vite.svg', title: '前端构建工具,比较适合vue3'},
@@ -275,6 +279,8 @@ const navList = {
       {name: 'FileSaver', href: 'https://github.com/eligrey/FileSaver.js', icon: '../images/favicons/github.png', title: '文件保存插件，可以下载文件到本地'},
       {name: 'fabric', href: 'http://fabricjs.com/', icon: '../images/favicons/fabric.ico', title: '基于canvas的库，简化2D操作'},
       {name: 'fontmin', href: 'http://ecomfe.github.io/fontmin/#source', icon: '../images/favicons/fontmin.ico', title: '字体集成压缩'},
+      {name: 'wowjs', href: 'https://wowjs.uk/', icon: '../images/favicons/wowjs.ico', title: '滚动加载特效插件'},
+      {name: 'particles', href: 'https://github.com/marcbruederlin/particles.js', icon: '../images/favicons/github.png', title: '粒子背景插件'},
     ],
     "微信公众号": [
       {name: '微小宝', href: 'https://www.wxb.com/', icon: '../images/favicons/微小宝.ico', title: ''},
@@ -362,7 +368,9 @@ const navList = {
   "后端开发": {
     "工具": [
       {name: 'Bitbucket', href: 'https://bitbucket.org/', icon: '../images/favicons/Bitbucket.png', title: '私有仓库管理工具'},
-      {name: 'docker', href: 'https://www.docker.com/', icon: '../images/favicons/docker.webp', title: ''}
+      {name: 'docker', href: 'https://www.docker.com/', icon: '../images/favicons/docker.webp', title: ''},
+      {name: 'docker版本', href: 'https://docs.docker.com/desktop/release-notes/#442', icon: '../images/favicons/docker版本.ico', title: '下载不同版本docker'},
+      {name: 'jsonplaceholder', href: 'http://jsonplaceholder.typicode.com/', icon: '../images/favicons/jsonplaceholder.ico', title: 'JSON解析'},
     ],
     "接口测试工具": [
       {name: 'apipost', href: 'https://www.apipost.cn/', icon: '../images/favicons/apipost.ico', title: '国人开发的接口测试工具，支持接口在线查看'},
@@ -392,12 +400,17 @@ const navList = {
       {name: 'mybatis', href: 'https://mybatis.org/mybatis-3/', icon: '', title: '非常好用的java操作数据库的插件'},
       {name: 'mybatis-plus', href: 'https://baomidou.com/', icon: '../images/favicons/mybatis-plus.ico', title: 'mybatis的升级版'},
       {name: 'ruoyi', href: 'http://www.ruoyi.vip/', icon: '../images/favicons/ruoyi.ico', title: '若依框架，和spring-security一样用于安全过滤'},
+      {name: 'aurora-blog', href: 'https://github.com/blog-aurora/aurora-blog', icon: '../images/favicons/github.png', title: '于Spring Cloud Alibaba的多人微服务博客项目'},
     ],
     "数据库": [
       {name: 'redis', href: 'https://redis.io/', icon: '../images/favicons/redis.png'},
     ],
     "微服务": [
       {name: 'nacos', href: 'https://github.com/alibaba/nacos', icon: '../images/favicons/github.png'},
+    ],
+    "CI/CD": [
+      {name: 'awesome-actions', href: 'https://github.com/sdras/awesome-actions', icon: '../images/favicons/github.png', title: 'actions库，可以选择使用不同功能的action'},
+      {name: 'marketplace', href: 'https://github.com/marketplace?type=actions', icon: '../images/favicons/github.png', title: 'actions库，可以选择使用不同功能的action'},
     ],
     "插件或库": [
     {name: 'ip2region', href: 'https://github.com/lionsoul2014/ip2region', icon: '../images/favicons/github.png', title: '可以用来根据ip查询所在地'},
@@ -424,6 +437,7 @@ const navList = {
       {name: 'wallpapermaiden', href: 'https://www.wallpapermaiden.com/', icon: '../images/favicons/wallpapermaiden.png', title: '图片资源'},
       {name: 'anime-pictures', href: 'https://anime-pictures.net/', icon: '../images/favicons/anime-pictures.ico', title: '图片资源'},
       {name: 'wallroom', href: 'https://wallroom.io/', icon: '../images/favicons/wallroom.ico', title: '图片资源'},
+      {name: 'iLikeWallpaper', href: 'https://www.ilikewallpaper.net/', icon: '../images/favicons/iLikeWallpaper.png', title: '图片资源'},
     ],
     "动漫视频": [
       {name: '蜜柑计划', href: 'https://mikanani.me/', icon: '../images/favicons/蜜柑计划.ico'},
@@ -460,6 +474,8 @@ const navList = {
     ],
     "漫画": [
       {name: '古风漫画网', href: 'https://www.gufengmh9.com/', icon: '../images/favicons/古风漫画网.ico'},
+      {name: '动漫屋', href: 'https://www.dm5.com/', icon: '../images/favicons/动漫屋.ico'},
+      {name: '漫客栈', href: 'https://www.mkzhan.com/', icon: '../images/favicons/漫客栈.ico'},
     ],
     "小说": [
       {name: '读书导航', href: 'http://www.zoudupai.com/', icon: ''},
@@ -471,6 +487,7 @@ const navList = {
       {name: 'steam', href: 'https://store.steampowered.com/', icon: '../images/favicons/steam.ico'},
       {name: 'NGA玩家社区', href: 'https://bbs.nga.cn/', icon: '../images/favicons/NGA玩家社区.ico'},
       {name: '灰机wiki', href: 'https://www.huijiwiki.com/', icon: '../images/favicons/灰机wiki.png'},
+      {name: '心悦俱乐部', href: 'https://xinyue.qq.com/beta/#/', icon: '../images/favicons/心悦俱乐部.ico'},
       {name: '开黑啦', href: 'https://www.kaiheila.cn/', icon: '../images/favicons/开黑啦.ico'},
     ],
     "ff14专题": [
@@ -507,9 +524,15 @@ const navList = {
       {name: 'aiiyx', href: 'https://aiiyx.cn/', icon: ''},
       {name: '楠格', href: 'https://www.nange.cn/', icon: '../images/favicons/楠格.png'},
       {name: 'Amaya丶夜雨', href: 'https://amayaliu.cn/', icon: '../images/favicons/Amaya丶夜雨.jpg'},
-      {name: 'Evan', href: 'https://xugaoyi.com/', icon: ''}
+      {name: 'Evan', href: 'https://xugaoyi.com/', icon: ''},
+      {name: '冴羽', href: 'https://github.com/mqyqingfeng/Blog', icon: '../images/favicons/github.png'}
     ]
   }
+}
+
+// 搜索框下面的图标列表
+const topList = {
+
 }
 
 
