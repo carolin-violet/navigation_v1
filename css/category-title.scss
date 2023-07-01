@@ -1,0 +1,13 @@
+.category-title-wrapper{
+  width: 80%;
+  margin: 64px auto;
+  display: flex;
+  flex-wrap: wrap;
+  .category{
+    flex: 1 1 120px;
+    margin: 10px 10px;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+  }
+}
