@@ -13,7 +13,7 @@ const colorPalette = [
   { bg: '#2FB97B', font: '#FDF9F6' },
 ]
 
-// 导航列表
+// 导航列表(注意图片路径开头为./而不是../)
 const navList = {
   "学习": {
     '学习导航': [
