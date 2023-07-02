@@ -19,7 +19,7 @@
   scale: 0.9;
 }
 .nav-wrapper .sub-category.active.show {
-  opacity: 0.95;
+  opacity: 1;
   scale: 1;
 }
 .nav-wrapper .sub-category .sub-category-title {

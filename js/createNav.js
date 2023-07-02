@@ -558,7 +558,7 @@ const createNavElement = () => {
       subCategoryEl.classList.add('sub-category')
       subCategoryEl.dataset.category = category
       subCategoryEl.dataset.subCategory = subCategory
-      subCategoryEl.style.backgroundColor = colorPalette[index % colorPalette.length].bg
+      subCategoryEl.style.backgroundColor = `${colorPalette[index % colorPalette.length].bg}c9` // 颜色+透明度
       subCategoryEl.style.color = colorPalette[index % colorPalette.length].font
       const titleEl = document.createElement('strong')
       titleEl.classList.add('sub-category-title')
