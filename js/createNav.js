@@ -576,7 +576,7 @@ const createNavElement = () => {
         li.innerHTML = `
         <a class='nav-link' target='_blank' href=${nav.href}>
           <div class='icon'>
-            <img src='${nav.icon}'></img> 
+            <img src='${nav.icon ? nav.icon : './images/browser.svg'}'></img> 
           </div>
           <div class='nav' title='${nav.title ? nav.title : '暂无备注'}'>
             ${nav.name}
