@@ -1,7 +1,7 @@
 // 设置滚动加载特效并且节流优化
 const mainEl = document.querySelector('.main')
 
-mainEl.addEventListener('scroll', throttle(checkSubCategory, 300))
+mainEl.addEventListener('scroll', throttle(checkSubCategory, 100))
 checkSubCategory()
 
 function checkSubCategory(t) {
