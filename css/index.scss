@@ -1,3 +1,9 @@
+@import './mixin.scss';
+
+body{
+  overflow-x: hidden;
+  @include scrollBar;
+}
 .bg{
   width: 100vw;
   height: 100vh;

@@ -1,0 +1,24 @@
+// 滚动条样式（混合）
+@mixin scrollBar {
+
+  /* 整个滚动条的样式 */
+  ::-webkit-scrollbar {
+    width: 10px;
+    border-radius: 3px;
+}
+
+  /* 滚动条的底层样式（即背景） */
+  ::-webkit-scrollbar-track {
+    background-color: #009EFA6A;
+    border-radius: 3px;
+}
+
+
+  /* 滚动条的跟随滚动的小方块，能上下移动 */
+  ::-webkit-scrollbar-thumb {
+    background-color: #00D2FC;
+    height: 40px;
+    border-radius: 3px;
+}
+
+}

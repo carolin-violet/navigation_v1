@@ -4,7 +4,7 @@
 使用html+scss+js编写，用于保存收纳个人使用的一些站点
 
 
-使用treer包生成代码目录，命令如下：reer -e ./dir.txt -i "/(.git|favicons|.map|.scss)/"
+使用treer包生成代码目录，命令如下：treer -e ./dir.txt -i "/(\.git|favicons|\.map|\.css)/"
 # 代码目录结构
 
 ```
@@ -27,21 +27,11 @@
 ├─font
 |  └米开软笔行楷.ttf
 ├─css
-|  ├─category-title.css
-|  ├─category-title.css.map
 |  ├─category-title.scss
-|  ├─index.css
-|  ├─index.css.map
 |  ├─index.scss
-|  ├─nav.css
-|  ├─nav.css.map
+|  ├─mixin.scss
 |  ├─nav.scss
-|  ├─reset.css
-|  ├─reset.css.map
-|  ├─reset.scss
-|  ├─scrollBar.css
-|  ├─scrollBar.css.map
-|  └scrollBar.scss
+|  └reset.scss
 ```
 
 
