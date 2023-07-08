@@ -278,7 +278,6 @@ const navList = {
       {name: 'jsencrypt', href: 'https://github.com/travist/jsencrypt', icon: './images/favicons/github.png', title: '主要用于RSA非对称加密'},
       {name: 'FileSaver', href: 'https://github.com/eligrey/FileSaver.js', icon: './images/favicons/github.png', title: '文件保存插件，可以下载文件到本地'},
       {name: 'fabric', href: 'http://fabricjs.com/', icon: './images/favicons/fabric.ico', title: '基于canvas的库，简化2D操作'},
-      {name: 'fontmin', href: 'http://ecomfe.github.io/fontmin/#source', icon: './images/favicons/fontmin.ico', title: '字体集成压缩'},
       {name: 'wowjs', href: 'https://wowjs.uk/', icon: './images/favicons/wowjs.ico', title: '滚动加载特效插件'},
       {name: 'particles', href: 'https://github.com/marcbruederlin/particles.js', icon: './images/favicons/github.png', title: '粒子背景插件'},
     ],
@@ -318,7 +317,7 @@ const navList = {
       {name: '日本免费矢量图库网', href: 'https://event-pre.com/', icon: './images/favicons/日本免费矢量图库网.ico'},
       {name: 'PNG透明素材网', href: 'https://www.cleanpng.com/', icon: './images/favicons/PNG透明素材网.ico'},
     ],
-    "常用工具": [
+    "图片处理": [
       {name: '像素大厨', href: 'https://www.fancynode.com.cn/', icon: './images/favicons/像素大厨.png', title: '根据psd可以获取一些间距颜色字体大小等'},
       {name: 'iloveimg', href: 'https://www.iloveimg.com/zh-cn', icon: './images/favicons/iloveimg.png', title: '图片格式转换工具'},
       {name: 'CODEPEN', href: 'https://codepen.io/', icon: './images/favicons/CODEPEN.ico', title: '可以在上面写在线的html代码'},
@@ -333,8 +332,13 @@ const navList = {
       {name: '智能抠图网站', href: 'https://www.remove.bg/zh', icon: './images/favicons/智能抠图网站.png'},
       {name: 'tinypng', href: 'https://tinypng.com/', title: '图片压缩网站', icon: './images/favicons/tinypng.ico'},
       {name: 'convert2svg', href: 'https://convert2svg.com/', title: '图片转为svg格式', icon: './images/favicons/convert2svg.ico'},
-      {name: 'transfonter', href: 'https://transfonter.org/#', title: '字体工具(暂时没研究功能)', icon: './images/favicons/transfonter.ico'},
       {name: '慕客', href: 'https://www.mockplus.cn/', title: '快速制作ui原型图', icon: './images/favicons/慕客.ico'},
+    ],
+    "字体": [
+      {name: '100font', href: 'https://www.100font.com/', icon: './images/favicons/100font.ico', title: '免费商用字体'},
+      {name: '站长字体', href: 'https://font.chinaz.com/', icon: './images/favicons/站长字体.ico', title: '免费字体'},
+      {name: 'fontmin', href: 'http://ecomfe.github.io/fontmin/#source', icon: './images/favicons/fontmin.ico', title: '字体集成压缩'},
+      {name: 'transfonter', href: 'https://transfonter.org/#', icon: './images/favicons/transfonter.ico', title: '字体工具(暂时没研究功能)'},
     ],
     "取色": [
       {name: 'ColorSpace', href: 'https://mycolor.space/', icon: './images/favicons/ColorSpace.png', title: '调色板'},
