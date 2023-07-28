@@ -1,11 +1,10 @@
 // 设置滚动加载特效并且节流优化
 const mainEl = document.querySelector('.main')
 
-mainEl.addEventListener('scroll', throttle(event => checkSubCategory(event), 100))
+mainEl.addEventListener('scroll', throttle(checkSubCategory, 100))
 checkSubCategory()
 
-function checkSubCategory(...arguments) {
-  console.log(arguments);
+function checkSubCategory(t) {
   const triggerBottom = window.innerHeight * 0.8
 
   activeElList.forEach(subCategoryEl => {
@@ -20,16 +19,15 @@ function checkSubCategory(...arguments) {
 
 // 节流函数
 function throttle(fn, delay) {
-  let flag = true
+  let pre = new Date()
 
-  return function (...args) {
-    if (!flag) return;
-
-    flag = false
-
-    setTimeout(() => {
-      fn.apply(this, args)
-      flag = true
-    }, delay)
+  return function() {
+    let context = this
+    let args = arguments
+    let now = +new Date()
+    if (now - pre >= delay) {
+      fn.apply(context, args)
+      pre = new Date()
+    }
   }
 }
