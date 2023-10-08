@@ -1434,7 +1434,7 @@ const navList = {
       {
         name: "站长素材",
         href: "https://sc.chinaz.com/",
-        icon: "./images/favicons/站长素材.ICO",
+        icon: "./images/favicons/站长素材.ico",
         title: "各种素材",
       },
       {
