@@ -1,6 +1,7 @@
 @charset "UTF-8";
 body {
-  overflow-x: hidden; /* 整个滚动条的样式 */
+  overflow-x: hidden;
+  /* 整个滚动条的样式 */
   /* 滚动条的底层样式（即背景） */
   /* 滚动条的跟随滚动的小方块，能上下移动 */
 }
