@@ -41,7 +41,7 @@ const colorPalette = [{
 
 // const iconUrlPrefix = './images/favicons/'  // 本地图片
 const iconUrlPrefix = 'https://cdn.jsdelivr.net/gh/carolin-violet/navigation/images/favicons/'
-
+const defaultIconUrl = 'https://cdn.jsdelivr.net/gh/carolin-violet/navigation/images/browser.svg'
 // 导航列表(注意图片路径开头为./而不是../)
 const navList = {
   学习: {
@@ -2363,7 +2363,7 @@ const createNavElement = () => {
         li.innerHTML = `
         <a class='nav-link' target='_blank' href=${nav.href}>
           <div class='icon'>
-            <img class='nav-icon' src='./images/browser.svg' data-src='${nav.icon ? nav.icon : './images/browser.svg'}'></img> 
+            <img class='nav-icon' src=${defaultIconUrl} data-src=${nav.icon ? nav.icon : defaultIconUrl}></img> 
           </div>
           <div class='nav' title='${nav.title ? nav.title : "暂无备注"}'>
             ${nav.name}

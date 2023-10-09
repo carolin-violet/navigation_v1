@@ -6,15 +6,21 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="导航站点,收藏网站, 网站收藏，carolin-violet，violet的导航站点">
-  </meta>
+  <meta http-equiv="Content-Security-Policy" content="script-src https://cdn.jsdelivr.net/ 'self'; 
+    style-src https://cdn.jsdelivr.net/ 'self';
+    font-src https://cdn.jsdelivr.net/ 'self' data:;
+    img-src https://cdn.jsdelivr.net/ 'self'">
   <title>导航站点</title>
 
   <link rel="icon" href="https://cdn.jsdelivr.net/gh/carolin-violet/navigation/images/favicon.avif">
 
-  <link rel="stylesheet" href="./css/reset.min.css">
-  <link rel="stylesheet" href="./css/index.min.css">
-  <link rel="stylesheet" href="./css/nav.min.css">
-  <link rel="stylesheet" href="./css/category-title.min.css">
+  <link rel="preload" href="https://cdn.jsdelivr.net/gh/carolin-violet/navigation/font/米开软笔行楷.ttf" as="font"
+    type="font/ttf">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/carolin-violet/navigation/css/index.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/carolin-violet/navigation/css/nav.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/carolin-violet/navigation/css/category-title.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/carolin-violet/navigation/css/reset.min.css">
 </head>
 
 <body>
@@ -40,9 +46,11 @@
   </section>
 
 
-  <script src="./js/createNav.min.js"></script>
-  <script src="./js/waterfall.min.js"></script>
-  <script src="./js/scroll.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/carolin-violet/navigation/js/createNav.min.js">
+  </script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/carolin-violet/navigation/js/waterfall.min.js">
+  </script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/carolin-violet/navigation/js/scroll.min.js"></script>
 </body>
 
 </html>
