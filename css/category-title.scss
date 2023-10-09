@@ -1,7 +1,8 @@
-// @font-face {
-//   font-family: 米开软笔行楷;
-//   src: url(https://cdn.jsdelivr.net/gh/carolin-violet/navigation/font/米开软笔行楷.ttf);
-// }
+@font-face {
+  font-family: 米开软笔行楷;
+  src: url(https://cdn.jsdelivr.net/gh/carolin-violet/navigation/font/米开软笔行楷.ttf) format('ttf');
+  font-display: swap;
+}
 
 .category-title-wrapper{
   width: 80%;
