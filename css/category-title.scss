@@ -1,7 +1,7 @@
 @font-face {
   font-family: 米开软笔行楷;
-  src: url(https://cdn.jsdelivr.net/gh/carolin-violet/navigation/font/米开软笔行楷.ttf) format('ttf');
-  font-display: swap;
+  src: url(https://cdn.jsdelivr.net/gh/carolin-violet/navigation/font/米开软笔行楷.ttf);
+  font-display: swap; // 字体没加载前先用默认的，加载了就用这个
 }
 
 .category-title-wrapper{
