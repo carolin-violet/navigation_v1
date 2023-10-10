@@ -79,23 +79,23 @@ treer -e ./dir.txt -i "/(\.git|favicons|\.map|\.css|\.min)/"
 
 4. 安全
 
-   - nginx配置https
+   - nginx 配置 https
 
-   - 在html头部添加CSP配置允许加载同源资源和cdn资源
+   - 在 html 头部添加 CSP 配置允许加载同源资源和 cdn 资源
 
      ```
-       <meta http-equiv="Content-Security-Policy" content="script-src https://cdn.jsdelivr.net/ 'self'; 
+       <meta http-equiv="Content-Security-Policy" content="script-src https://cdn.jsdelivr.net/ 'self';
          style-src https://cdn.jsdelivr.net/ 'self';
          font-src https://cdn.jsdelivr.net/ 'self' data:;
          img-src https://cdn.jsdelivr.net/ 'self'">
      ```
 
-5. SEO优化
+5. SEO 优化
 
-   - img标签添加alt属性
-   - head添加  <meta name="description" content="xxx"> 
+   - img 标签添加 alt 属性
+   - head 添加   <meta name="description" content="xxx">
 
-lighthouse前后评分对比:
+lighthouse 前后评分对比:
 
 ![优化前](https://cdn.jsdelivr.net/gh/carolin-violet/navigation/images/lighthouse1.png)
 
