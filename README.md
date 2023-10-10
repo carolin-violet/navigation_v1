@@ -1,11 +1,22 @@
-[github在线地址](https://carolin-violet.github.io/navigation/)，[gitee在线地址](https://carolin-violet.gitee.io/navigation/), [云服务器地址](https://carolin-violet.cloud/violet-nav/)
-# 导航站点介绍
+# 一.在线预览
 
-使用html+scss+js编写，用于保存收纳个人使用的一些站点
+[github 在线地址](https://carolin-violet.github.io/navigation/)，[gitee 在线地址](https://carolin-violet.gitee.io/navigation/), [云服务器地址](https://carolin-violet.cloud/violet-nav/)
 
+# 二.导航站点介绍
 
-使用treer包生成代码目录，命令如下：treer -e ./dir.txt -i "/(\.git|favicons|\.map|\.css)/"
-# 代码目录结构
+使用 html+scss+js 编写，用于保存收纳个人使用的一些站点
+
+# 三.代码目录结构
+
+使用 treer 包生成代码目录，命令如下：
+
+```
+npm install treer -g
+# 忽略git文件，favicons目录，map文件，css文件，min文件
+treer -e ./dir.txt -i "/(\.git|favicons|\.map|\.css|\.min)/"
+```
+
+代码目录如下:
 
 ```
 ├─index.html
@@ -16,7 +27,7 @@
 | └waterfall.js
 ├─images
 |   ├─browser.svg
-|   ├─favicon.png
+|   ├─favicon.avif
 |   ├─bg
 |   | ├─1080p-2.webp
 |   | ├─1080p.webp
@@ -34,9 +45,36 @@
 |  └reset.scss
 ```
 
+# 四.性能优化
 
+1. 体积压缩
 
+   - 图片压缩: jpg、png格式图片统一压缩成webp或avif格式,[在线压缩地址](https://devtool.tech/tiny-image)
+   - css、js文件压缩: vscode使用minify插件进行体积压缩
+   - 字体文件压缩: 使用fontmin对使用到的字体文件进行压缩,[官网地址](https://ecomfe.github.io/fontmin/)
 
+2. 网络资源
 
+   - cdn: 图片、css、js、字体文件等静态资源使用cdn缓存
 
+   - 字体预加载: 
+
+     ```
+     # head中添加
+     <link rel="preload"href="https://cdn.jsdelivr.net/gh/carolinviolet/navigation/font/米开软笔行楷.ttf" as="font"
+         type="font/ttf" crossorigin>
+         
+     # 引入的字体
+     @font-face {
+       font-family: 米开软笔行楷;
+       src: url(https://cdn.jsdelivr.net/gh/carolin-violet/navigation/font/米开软笔行楷.ttf);
+       font-display: swap; // 字体没加载前先用默认的，加载了就用这个,即使字体没有加载，使用当前字体的网页内容也可以渲染
+     }
+     ```
+
+     
+
+3. 使用性能
+
+   - 页面滚动使用节流
 
