@@ -2,7 +2,7 @@ name: syncToGitee
 on:
   push:
     branches:
-      - gh-pages
+      - master
 jobs:
   repo-sync:
     runs-on: ubuntu-latest
@@ -11,14 +11,14 @@ jobs:
       - name: Mirror the Github organization repos to Gitee.
         uses: Yikun/hub-mirror-action@master
         with:
-          src: 'github/carolin-violet'
-          dst: 'gitee/carolin-violet'
+          src: "github/carolin-violet"
+          dst: "gitee/carolin-violet"
           dst_key: ${{ secrets.GITEE_PRIVATE_KEY }}
-          dst_token:  ${{ secrets.GITEE_TOKEN }}
+          dst_token: ${{ secrets.GITEE_TOKEN }}
           static_list: "navigation"
           force_update: true
           debug: true
-    
+
       # gitee部署页面
       - name: Build Gitee Pages
         uses: yanglbme/gitee-pages-action@main
