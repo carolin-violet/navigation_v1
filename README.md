@@ -49,21 +49,21 @@ treer -e ./dir.txt -i "/(\.git|favicons|\.map|\.css|\.min)/"
 
 1. 体积压缩
 
-   - 图片压缩: jpg、png格式图片统一压缩成webp或avif格式,[在线压缩地址](https://devtool.tech/tiny-image)
-   - css、js文件压缩: vscode使用minify插件进行体积压缩
-   - 字体文件压缩: 使用fontmin对使用到的字体文件进行压缩,[官网地址](https://ecomfe.github.io/fontmin/)
+   - 图片压缩: jpg、png 格式图片统一压缩成 webp 或 avif 格式,[在线压缩地址](https://devtool.tech/tiny-image)
+   - css、js 文件压缩: vscode 使用 minify 插件进行体积压缩
+   - 字体文件压缩: 使用 fontmin 对使用到的字体文件进行压缩,[官网地址](https://ecomfe.github.io/fontmin/)
 
 2. 网络资源
 
-   - cdn: 图片、css、js、字体文件等静态资源使用cdn缓存
+   - cdn: 图片、css、js、字体文件等静态资源使用 cdn 缓存
 
-   - 字体预加载: 
+   - 字体预加载:
 
      ```
      # head中添加
      <link rel="preload"href="https://cdn.jsdelivr.net/gh/carolinviolet/navigation/font/米开软笔行楷.ttf" as="font"
          type="font/ttf" crossorigin>
-         
+
      # 引入的字体
      @font-face {
        font-family: 米开软笔行楷;
@@ -72,9 +72,31 @@ treer -e ./dir.txt -i "/(\.git|favicons|\.map|\.css|\.min)/"
      }
      ```
 
-     
-
 3. 使用性能
 
    - 页面滚动使用节流
+   - 图片懒加载: IntersectionObserver API 进行图片懒加载
 
+4. 安全
+
+   - nginx配置https
+
+   - 在html头部添加CSP配置允许加载同源资源和cdn资源
+
+     ```
+       <meta http-equiv="Content-Security-Policy" content="script-src https://cdn.jsdelivr.net/ 'self'; 
+         style-src https://cdn.jsdelivr.net/ 'self';
+         font-src https://cdn.jsdelivr.net/ 'self' data:;
+         img-src https://cdn.jsdelivr.net/ 'self'">
+     ```
+
+5. SEO优化
+
+   - img标签添加alt属性
+   - head添加  <meta name="description" content="xxx"> 
+
+lighthouse前后评分对比:
+
+![优化前](https://cdn.jsdelivr.net/gh/carolin-violet/navigation/images/lighthouse1.png)
+
+![优化后](https://cdn.jsdelivr.net/gh/carolin-violet/navigation/images/lighthouse2.png)
