@@ -2098,7 +2098,7 @@ const navList = {
       {
         name: "PingPong Joy",
         href: "https://joy.pingpongx.com/index",
-        icon: iconUrlPrefix + "PingPong Joy.ico",
+        icon: iconUrlPrefix + "PingPongJoy.ico",
       },
       {
         name: "淘宝",
