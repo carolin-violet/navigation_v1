@@ -1,7 +1,8 @@
 // 创建标签节点
 
 // 调色板
-const colorPalette = [{
+const colorPalette = [
+  {
     bg: "#5A7A7B",
     font: "#D2FAEB",
   },
@@ -41,13 +42,14 @@ const colorPalette = [{
 
 // const iconUrlPrefix = './images/favicons/'  // 本地图片
 const iconUrlPrefix =
-  "https://cdn.jsdelivr.net/gh/carolin-violet/navigation/images/favicons/";
+  "https://cdn.jsdelivr.net/gh/carolin-violet/navigation_v1/images/favicons/";
 const defaultIconUrl =
-  "https://cdn.jsdelivr.net/gh/carolin-violet/navigation/images/browser.svg";
+  "https://cdn.jsdelivr.net/gh/carolin-violet/navigation_v1/images/browser.svg";
 // 导航列表(注意图片路径开头为./而不是../)
 const navList = {
   学习: {
-    学习导航: [{
+    学习导航: [
+      {
         name: "github",
         href: "https://github.com/",
         icon: iconUrlPrefix + "github.png",
@@ -162,7 +164,8 @@ const navList = {
         title: "代码学习网站",
       },
     ],
-    学习相关软件工具: [{
+    学习相关软件工具: [
+      {
         name: "语雀",
         href: "https://www.yuque.com/dashboard",
         icon: iconUrlPrefix + "语雀.png",
@@ -265,7 +268,8 @@ const navList = {
         title: "图片查看工具",
       },
     ],
-    网盘存储: [{
+    网盘存储: [
+      {
         name: "百度网盘",
         href: "https://pan.baidu.com/",
         icon: iconUrlPrefix + "百度网盘.ico",
@@ -281,7 +285,8 @@ const navList = {
         icon: iconUrlPrefix + "腾讯微云.ico",
       },
     ],
-    开放平台: [{
+    开放平台: [
+      {
         name: "腾讯云",
         href: "https://cloud.tencent.com/",
         icon: iconUrlPrefix + "腾讯云.ico",
@@ -340,7 +345,8 @@ const navList = {
         title: "",
       },
     ],
-    求职: [{
+    求职: [
+      {
         name: "牛客网",
         href: "https://www.nowcoder.com/",
         icon: iconUrlPrefix + "牛客网.ico",
@@ -372,7 +378,8 @@ const navList = {
         icon: iconUrlPrefix + "看准网.ico",
       },
     ],
-    梯子: [{
+    梯子: [
+      {
         name: "接码平台",
         href: "https://sms-activate.org/",
         icon: iconUrlPrefix + "sms-activat.png",
@@ -399,7 +406,8 @@ const navList = {
         icon: iconUrlPrefix + "STC-SERVER.ico",
       },
     ],
-    外包接单: [{
+    外包接单: [
+      {
         name: "码市",
         href: "https://codemart.com/",
         icon: iconUrlPrefix + "码市.ico",
@@ -440,7 +448,8 @@ const navList = {
         icon: iconUrlPrefix + "人人开发.png",
       },
     ],
-    "3d引擎": [{
+    "3d引擎": [
+      {
         name: "unity",
         href: "https://unity.com/cn",
         icon: iconUrlPrefix + "unity.ico",
@@ -451,7 +460,8 @@ const navList = {
         icon: iconUrlPrefix + "虚幻4引擎.png",
       },
     ],
-    开源插件项目: [{
+    开源插件项目: [
+      {
         name: "免费markdown编辑器",
         href: "https://github.com/marktext/marktext/",
         icon: iconUrlPrefix + "github.png",
@@ -488,7 +498,8 @@ const navList = {
     ],
   },
   web3: {
-    资料: [{
+    资料: [
+      {
         name: "以太坊",
         href: "https://ethereum.org/zh/",
         icon: iconUrlPrefix + "以太坊.png",
@@ -557,7 +568,8 @@ const navList = {
         icon: iconUrlPrefix + "geth.ico",
       },
     ],
-    应用: [{
+    应用: [
+      {
         name: "谜恋猫",
         href: "https://www.cryptokitties.co/",
         title: "一款基于以太币的货品",
@@ -596,7 +608,8 @@ const navList = {
     ],
   },
   AI: {
-    "stable diffusion 专栏": [{
+    "stable diffusion 专栏": [
+      {
         name: "civitai",
         href: "https://civitai.com/",
         title: "ai模型",
@@ -627,7 +640,8 @@ const navList = {
         icon: iconUrlPrefix + "atoolbox.ico",
       },
     ],
-    应用: [{
+    应用: [
+      {
         name: "openai",
         href: "https://openai.com/",
         title: "",
@@ -660,7 +674,8 @@ const navList = {
     ],
   },
   前端开发: {
-    Vue相关: [{
+    Vue相关: [
+      {
         name: "vue3",
         href: "https://v3.cn.vuejs.org/",
         icon: iconUrlPrefix + "vue.svg",
@@ -715,7 +730,8 @@ const navList = {
         name: "vue-admin-template",
         href: "https://github.com/PanJiaChen/vue-admin-template",
         icon: iconUrlPrefix + "github.png",
-        title: "开源的vue后台管理系统模板,差不多只有个大概框架，可扩展性强，我vue2项目用的多",
+        title:
+          "开源的vue后台管理系统模板,差不多只有个大概框架，可扩展性强，我vue2项目用的多",
       },
       {
         name: "vue-aplayer",
@@ -922,7 +938,8 @@ const navList = {
         title: "学习elementplus源码",
       },
     ],
-    构建打包工具: [{
+    构建打包工具: [
+      {
         name: "Vite",
         href: "https://vitejs.cn/",
         icon: iconUrlPrefix + "Vite.svg",
@@ -941,7 +958,8 @@ const navList = {
         title: "前端构建工具",
       },
     ],
-    React相关: [{
+    React相关: [
+      {
         name: "react",
         href: "https://react.docschina.org/",
         icon: iconUrlPrefix + "react.ico ",
@@ -953,7 +971,8 @@ const navList = {
         title: "蚂蚁团队开发的基于react的组件库",
       },
     ],
-    其他js框架类库: [{
+    其他js框架类库: [
+      {
         name: "typescript",
         href: "https://www.tslang.cn/",
         icon: iconUrlPrefix + "typescript.png",
@@ -1014,7 +1033,8 @@ const navList = {
         title: "webuploader",
       },
     ],
-    css: [{
+    css: [
+      {
         name: "CSS-TRICKS",
         href: "https://css-tricks.com/",
         icon: iconUrlPrefix + "CSS-TRICKS.ico",
@@ -1087,7 +1107,8 @@ const navList = {
         title: "js控制的css动画库",
       },
     ],
-    图表: [{
+    图表: [
+      {
         name: "Echarts",
         href: "https://echarts.apache.org/zh/index.html",
         icon: iconUrlPrefix + "Echarts.png",
@@ -1115,7 +1136,8 @@ const navList = {
         title: "图表库",
       },
     ],
-    微前端: [{
+    微前端: [
+      {
         name: "single-spa",
         href: "https://zh-hans.single-spa.js.org/",
         icon: iconUrlPrefix + "single-spa.ico",
@@ -1134,7 +1156,8 @@ const navList = {
         title: "微前端解决方案",
       },
     ],
-    "3D": [{
+    "3D": [
+      {
         name: "webgl中文网",
         href: "http://www.hewebgl.com/",
         icon: iconUrlPrefix + "webgl中文网.ico",
@@ -1153,11 +1176,13 @@ const navList = {
         title: "3d框架",
       },
     ],
-    移动端: [{
+    移动端: [
+      {
         name: "uView UI",
         href: "https://www.uviewui.com/",
         icon: iconUrlPrefix + "uViewUI.avif",
-        title: "全面兼容nvue的uni-app生态框架，全面的组件和便捷的工具会让您信手拈来，如鱼得水",
+        title:
+          "全面兼容nvue的uni-app生态框架，全面的组件和便捷的工具会让您信手拈来，如鱼得水",
       },
       {
         name: "Frozen",
@@ -1166,7 +1191,8 @@ const navList = {
         title: "移动端ui组件库",
       },
     ],
-    一些插件: [{
+    一些插件: [
+      {
         name: "vscode插件",
         href: "https://marketplace.visualstudio.com/",
         icon: iconUrlPrefix + "vscode插件.ico",
@@ -1260,7 +1286,8 @@ const navList = {
         name: "path-to-regexp",
         href: "https://github.com/pillarjs/path-to-regexp",
         icon: iconUrlPrefix + "github.png",
-        title: "可以将url解析成匹配规则，也可以解析url中的参数，匹配url和规则是否相等",
+        title:
+          "可以将url解析成匹配规则，也可以解析url中的参数，匹配url和规则是否相等",
       },
       {
         name: "crypto-js",
@@ -1299,7 +1326,8 @@ const navList = {
         title: "粒子背景插件",
       },
     ],
-    微信公众号: [{
+    微信公众号: [
+      {
         name: "微小宝",
         href: "https://www.wxb.com/",
         icon: iconUrlPrefix + "微小宝.ico",
@@ -1312,7 +1340,8 @@ const navList = {
         title: "",
       },
     ],
-    UI设计灵感: [{
+    UI设计灵感: [
+      {
         name: "Behance",
         href: "https://www.behance.net/",
         icon: iconUrlPrefix + "Behance.ico",
@@ -1367,7 +1396,8 @@ const navList = {
         title: "收录漂亮的界面设计网站",
       },
     ],
-    素材: [{
+    素材: [
+      {
         name: "阿里巴巴矢量图标库",
         href: "https://www.iconfont.cn/",
         icon: iconUrlPrefix + "阿里巴巴矢量图标库.svg",
@@ -1476,7 +1506,8 @@ const navList = {
         icon: iconUrlPrefix + "PNG透明素材网.ico",
       },
     ],
-    图片处理: [{
+    图片处理: [
+      {
         name: "像素大厨",
         href: "https://www.fancynode.com.cn/",
         icon: iconUrlPrefix + "像素大厨.png",
@@ -1564,7 +1595,8 @@ const navList = {
         icon: iconUrlPrefix + "慕客.ico",
       },
     ],
-    字体: [{
+    字体: [
+      {
         name: "100font",
         href: "https://www.100font.com/",
         icon: iconUrlPrefix + "100font.ico",
@@ -1589,7 +1621,8 @@ const navList = {
         title: "字体工具(暂时没研究功能)",
       },
     ],
-    取色: [{
+    取色: [
+      {
         name: "ColorSpace",
         href: "https://mycolor.space/",
         icon: iconUrlPrefix + "ColorSpace.png",
@@ -1644,7 +1677,8 @@ const navList = {
         title: "web安全色 ",
       },
     ],
-    代码生成的一些样式: [{
+    代码生成的一些样式: [
+      {
         name: "Variant Form",
         href: "https://www.vform666.com/",
         icon: iconUrlPrefix + "VariantForm.ico",
@@ -1699,7 +1733,8 @@ const navList = {
         title: "包含css卡片生成器等",
       },
     ],
-    杂项: [{
+    杂项: [
+      {
         name: "猫云",
         href: "https://www.bootcdn.cn/",
         icon: iconUrlPrefix + "猫云.ico",
@@ -1726,7 +1761,8 @@ const navList = {
     ],
   },
   后端开发: {
-    工具: [{
+    工具: [
+      {
         name: "Bitbucket",
         href: "https://bitbucket.org/",
         icon: iconUrlPrefix + "Bitbucket.avif",
@@ -1751,7 +1787,8 @@ const navList = {
         title: "JSON解析",
       },
     ],
-    接口测试工具: [{
+    接口测试工具: [
+      {
         name: "apipost",
         href: "https://www.apipost.cn/",
         icon: iconUrlPrefix + "apipost.ico",
@@ -1770,13 +1807,16 @@ const navList = {
         title: "主要用于测试后端接口",
       },
     ],
-    python: [{
-      name: "flask",
-      href: "https://dormousehole.readthedocs.io/en/latest/",
-      icon: iconUrlPrefix + "flask.webp",
-      title: "python的flask框架的文档",
-    }, ],
-    node: [{
+    python: [
+      {
+        name: "flask",
+        href: "https://dormousehole.readthedocs.io/en/latest/",
+        icon: iconUrlPrefix + "flask.webp",
+        title: "python的flask框架的文档",
+      },
+    ],
+    node: [
+      {
         name: "nodejs",
         href: "http://nodejs.cn/",
         icon: iconUrlPrefix + "nodejs.png",
@@ -1825,13 +1865,16 @@ const navList = {
         title: "🔀 Cross platform setting of environment scripts",
       },
     ],
-    go: [{
-      name: "go学习资源",
-      href: "https://github.com/talkgo/read",
-      icon: iconUrlPrefix + "github.png",
-      title: "github上的go学习资源",
-    }, ],
-    java: [{
+    go: [
+      {
+        name: "go学习资源",
+        href: "https://github.com/talkgo/read",
+        icon: iconUrlPrefix + "github.png",
+        title: "github上的go学习资源",
+      },
+    ],
+    java: [
+      {
         name: "springboot",
         href: "https://spring.io/projects/spring-boot#learn",
         icon: iconUrlPrefix + "springboot.png",
@@ -1873,17 +1916,22 @@ const navList = {
         title: "于Spring Cloud Alibaba的多人微服务博客项目",
       },
     ],
-    数据库: [{
-      name: "redis",
-      href: "https://redis.io/",
-      icon: iconUrlPrefix + "redis.png",
-    }, ],
-    微服务: [{
-      name: "nacos",
-      href: "https://github.com/alibaba/nacos",
-      icon: iconUrlPrefix + "github.png",
-    }, ],
-    "CI/CD": [{
+    数据库: [
+      {
+        name: "redis",
+        href: "https://redis.io/",
+        icon: iconUrlPrefix + "redis.png",
+      },
+    ],
+    微服务: [
+      {
+        name: "nacos",
+        href: "https://github.com/alibaba/nacos",
+        icon: iconUrlPrefix + "github.png",
+      },
+    ],
+    "CI/CD": [
+      {
         name: "awesome-actions",
         href: "https://github.com/sdras/awesome-actions",
         icon: iconUrlPrefix + "github.png",
@@ -1896,7 +1944,8 @@ const navList = {
         title: "actions库，可以选择使用不同功能的action",
       },
     ],
-    插件或库: [{
+    插件或库: [
+      {
         name: "ip2region",
         href: "https://github.com/lionsoul2014/ip2region",
         icon: iconUrlPrefix + "github.png",
@@ -1923,7 +1972,8 @@ const navList = {
     ],
   },
   素材渠道: {
-    导航站点: [{
+    导航站点: [
+      {
         name: "兰客书签",
         href: "http://b.lackk.com/",
         icon: iconUrlPrefix + "兰客书签.png",
@@ -1939,7 +1989,8 @@ const navList = {
         icon: iconUrlPrefix + "阿雷资源导航.ico",
       },
     ],
-    图片: [{
+    图片: [
+      {
         name: "pixiv",
         href: "https://www.pixiv.net/",
         icon: iconUrlPrefix + "pixiv.ico",
@@ -2007,7 +2058,8 @@ const navList = {
         title: "图片资源",
       },
     ],
-    动漫视频: [{
+    动漫视频: [
+      {
         name: "蜜柑计划",
         href: "https://mikanani.me/",
         icon: iconUrlPrefix + "蜜柑计划.ico",
@@ -2028,14 +2080,17 @@ const navList = {
         icon: iconUrlPrefix + "潮点视频.ico",
       },
     ],
-    音乐: [{
-      name: "MyFreeMP3",
-      href: "http://tools.liumingye.cn/music/?page=searchPage",
-      icon: iconUrlPrefix + "MyFreeMP3.ico",
-    }, ],
+    音乐: [
+      {
+        name: "MyFreeMP3",
+        href: "http://tools.liumingye.cn/music/?page=searchPage",
+        icon: iconUrlPrefix + "MyFreeMP3.ico",
+      },
+    ],
   },
   娱乐: {
-    购物: [{
+    购物: [
+      {
         name: "全球付",
         href: "https://www.globalcash.hk/v4/",
         icon: iconUrlPrefix + "全球付.ico",
@@ -2061,7 +2116,8 @@ const navList = {
         icon: iconUrlPrefix + "京东.ico",
       },
     ],
-    动漫: [{
+    动漫: [
+      {
         name: "兜兜动漫",
         href: "http://www.dododm.com/",
         icon: iconUrlPrefix + "兜兜动漫.png",
@@ -2077,7 +2133,8 @@ const navList = {
         icon: iconUrlPrefix + "ppxdm.ico",
       },
     ],
-    影视: [{
+    影视: [
+      {
         name: "豆瓣",
         href: "https://movie.douban.com/",
         icon: iconUrlPrefix + "豆瓣.ico",
@@ -2113,7 +2170,8 @@ const navList = {
         icon: iconUrlPrefix + "低端影视.png",
       },
     ],
-    漫画: [{
+    漫画: [
+      {
         name: "古风漫画网",
         href: "https://www.gufengmh9.com/",
         icon: iconUrlPrefix + "古风漫画网.ico",
@@ -2129,7 +2187,8 @@ const navList = {
         icon: iconUrlPrefix + "漫客栈.ico",
       },
     ],
-    小说: [{
+    小说: [
+      {
         name: "读书导航",
         href: "http://www.zoudupai.com/",
         icon: "",
@@ -2150,7 +2209,8 @@ const navList = {
         icon: iconUrlPrefix + "乐阅读.ico",
       },
     ],
-    游戏: [{
+    游戏: [
+      {
         name: "steam",
         href: "https://store.steampowered.com/",
         icon: iconUrlPrefix + "steam.ico",
@@ -2176,7 +2236,8 @@ const navList = {
         icon: iconUrlPrefix + "开黑啦.ico",
       },
     ],
-    ff14专题: [{
+    ff14专题: [
+      {
         name: "官网",
         href: "https://ff.web.sdo.com/web8/index.html#/index",
         icon: iconUrlPrefix + "ff14.ico",
@@ -2232,7 +2293,8 @@ const navList = {
         icon: iconUrlPrefix + "优雷卡触发.png",
       },
     ],
-    杂项: [{
+    杂项: [
+      {
         name: "冷笑话",
         href: "https://icanhazdadjoke.com/",
         icon: iconUrlPrefix + "冷笑话.png",
@@ -2255,7 +2317,8 @@ const navList = {
     ],
   },
   博客: {
-    开源博客框架: [{
+    开源博客框架: [
+      {
         name: "hexo",
         href: "https://hexo.io/zh-cn/",
         icon: iconUrlPrefix + "hexo.png",
@@ -2266,7 +2329,8 @@ const navList = {
         icon: iconUrlPrefix + "halo.webp",
       },
     ],
-    大佬博客: [{
+    大佬博客: [
+      {
         name: "阮一峰的个人网站",
         href: "http://www.ruanyifeng.com/home.html",
         icon: iconUrlPrefix + "阮一峰的个人网站.ico",
