@@ -15,7 +15,7 @@ jobs:
           dst: "gitee/carolin-violet"
           dst_key: ${{ secrets.GITEE_PRIVATE_KEY }}
           dst_token: ${{ secrets.GITEE_TOKEN }}
-          static_list: "navigation"
+          static_list: "navigation_v1"
           force_update: true
           debug: true
 
