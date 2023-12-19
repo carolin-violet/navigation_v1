@@ -1,15 +1,15 @@
 @font-face {
   font-family: 米开软笔行楷;
-  src: url(https://cdn.jsdelivr.net/gh/carolin-violet/navigation/font/米开软笔行楷.ttf);
+  src: url(https://cdn.jsdelivr.net/gh/carolin-violet/navigation_v1/font/米开软笔行楷.ttf);
   font-display: swap; // 字体没加载前先用默认的，加载了就用这个
 }
 
-.category-title-wrapper{
+.category-title-wrapper {
   width: 80%;
   margin: 64px auto;
   display: flex;
   flex-wrap: wrap;
-  .category{
+  .category {
     flex: 1 1 120px;
     margin: 10px 10px;
     font-size: 24px;
