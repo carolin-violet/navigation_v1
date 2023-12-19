@@ -97,6 +97,6 @@ treer -e ./dir.txt -i "/(\.git|favicons|\.map|\.css|\.min)/"
 
 lighthouse 前后评分对比:
 
-![优化前](https://cdn.jsdelivr.net/gh/carolin-violet/navigation/images/lighthouse1.png)
+![优化前](https://cdn.jsdelivr.net/gh/carolin-violet/navigation_v1/images/lighthouse1.png)
 
-![优化后](https://cdn.jsdelivr.net/gh/carolin-violet/navigation/images/lighthouse2.png)
+![优化后](https://cdn.jsdelivr.net/gh/carolin-violet/navigation_v1/images/lighthouse2.png)
